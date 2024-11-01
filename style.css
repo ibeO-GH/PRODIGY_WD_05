@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --sub-color: #091b29;
+  --main-color: #132939;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1e1e1e;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  text-align: center;
+  background-color: var(--sub-color);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 2px 4px, rgba(0, 0, 0, 0.3) 0 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
+  padding: 25px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.app-name {
+  display: flex;
+  gap: 10px;
+}
+
+.app-name img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+h1 {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  color: #ccc;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#city-input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 2px 4px, rgba(0, 0, 0, 0.3) 0 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
+  width: 65%;
+}
+
+#search-button {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 2px 4px, rgba(0, 0, 0, 0.3) 0 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
+}
+
+#search-button:hover {
+  background-color: #0056b3;
+}
+
+.weatherInfo-container {
+  display: none;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  margin: 15px auto;
+  padding: 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 2px 4px, rgba(0, 0, 0, 0.3) 0 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
+  background-color: var(--main-color);
+  transition: background-color 0.3s;
+  color: #aaa;
+  line-height: 2;
+}
+
+.weather-info {
+  display: none;
+  margin-top: 10px;
+  color: #ccc;
+}
+
+#description {
+  color: moccasin;
+  font-size: 20px;
+}
+
+.weather-info h2,
+.weather-info p {
+  margin: 5px 0;
+}
+
+.weather-info img {
+  width: 100px;
+  height: 100px;
+}
+
+.error {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+  display: none;
+  color: moccasin;
+}
